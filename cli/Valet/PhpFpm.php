@@ -148,6 +148,7 @@ class PhpFpm
     public function fpmConfigPath()
     {
         return collect([
+            '/etc/php7'.$this->version.'/fpm/php-fpm.d',
             '/etc/php/'.$this->version.'/fpm/pool.d', // Ubuntu
             '/etc/php'.$this->version.'/fpm/pool.d', // Ubuntu
             '/etc/php-fpm.d', // Fedora
